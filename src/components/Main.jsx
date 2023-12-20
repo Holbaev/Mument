@@ -17,9 +17,9 @@ export const Main = ({
 }) => {
 
   // functions
-   const songSelectHandler = (id) =>{
+   const songSelectHandler = async (id) =>{
     const song = songs?.filter(s => s.id === id);
-    setCurrentSong(song);
+    await setCurrentSong(song[0]);
     const newSongs = songs?.map((song) =>{
       if(song?.id === id){
         return{
@@ -113,7 +113,7 @@ export const Main = ({
             ))}
         </div>
       </section>
-      <section className={styles.section_3}>
+      {/* <section className={styles.section_3}>
         <h3 className={styles.section_3_title}>Recent Artist</h3>
         <div className={styles.section_3_cards}>
           {songs?.length !== 0 &&
@@ -134,7 +134,7 @@ export const Main = ({
               </div>
             ))}
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };
