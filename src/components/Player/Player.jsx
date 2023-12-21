@@ -23,9 +23,9 @@ const Player = ({
   id,
   setSongs,
 }) => {
+  // states
   // functinos
   const handleTogglePlay = () => {
-    console.log("Hello!");
     const prevValue = isPlaying;
     setIsPlaying(!prevValue);
     if (!prevValue) {
@@ -49,7 +49,6 @@ const Player = ({
       }
     });
     setSongs(newSongs);
-    console.log("Hey from useEffect form player JS");
   };
   //Event Handlers
   const dragHandler = (e) => {
@@ -135,7 +134,7 @@ const Player = ({
       <div className={styles.section_3}>
         <FontAwesomeIcon
           size="2px"
-          icon={!audioRef.current.muted ? faVolumeUp : faVolumeMute}
+          icon={!audioRef.current?.muted ? faVolumeUp : faVolumeMute}
           className={styles.icon}
           onClick={handleToggleSound}
         />
