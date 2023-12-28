@@ -1,0 +1,23 @@
+.controls{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    color: white;
+}
+.control_btn{
+    background-color: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icon{
+    color: white;
+    width: 16px;
+    height: 16px;
+}

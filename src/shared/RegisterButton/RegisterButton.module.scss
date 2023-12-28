@@ -1,0 +1,17 @@
+.registr_btn{
+    background: #1ed760;
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    border-radius: 500px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.registr_btn:hover{
+    color: wheat;
+}   

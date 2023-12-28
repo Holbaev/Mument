@@ -1,5 +1,9 @@
-import MainPage from "./pages/MainPage/MainPage"
+import LoginPage from "./pages/LoginPage/LoginPage";
+import RegisterPage from "./pages/RegisterPage/RegisterPage";
+import MainPage from "./pages/MainPage/MainPage";
 
 export const routes = [
-    { path: '/' , component:<MainPage/>},
-]
+  { path: "/", component: <MainPage /> },
+  { path: "/login/", component: <LoginPage /> },
+  { path: "/register/", component: <RegisterPage /> },
+];

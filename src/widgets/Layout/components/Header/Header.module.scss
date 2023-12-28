@@ -1,0 +1,43 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #121212;
+    padding: 16px 24px;
+    border-radius: 6px;
+}
+.header_btns{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.login_btn{
+color: #a7a7a7;;
+font-size: 1.6em;
+font-weight: 700;
+background: transparent;
+border: none;
+cursor: pointer;
+transition: transform 200ms ease; /* Changed from color to transform for scaling */
+}
+.login_btn:hover{
+    color: white;
+    transform: scale(1.04); 
+}
+.register_btn {
+    font-size: 1.6em;
+    font-weight: 700;
+    display: inline-block;
+    background: #fff;
+    color: #121212;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: transform 200ms ease; /* Changed from color to transform for scaling */
+  }
+  
+  .register_btn:hover {
+    transform: scale(1.04); /* Adjust the scale factor as needed */
+  }

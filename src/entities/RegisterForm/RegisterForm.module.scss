@@ -1,0 +1,13 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100%;
+}
+.form_text{
+    font-size: 14px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}

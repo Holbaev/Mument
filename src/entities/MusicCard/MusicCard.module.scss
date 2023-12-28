@@ -1,0 +1,30 @@
+.card{
+    color: white;
+    width: 100%;
+    background: #2a2a2a;
+    padding: 16px;
+    border-radius: 6px;
+}
+.card_img{
+    max-height: 145px;
+    max-width: 145px;
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 16px;
+
+}
+.card_title{
+    font-size: 2em;
+    font-weight: 700;
+    -webkit-tap-highlight-color: transparent;
+    color: #fff;
+    margin-bottom: 4px;
+}
+.card_desk{
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #a7a7a7 ;
+
+}
