@@ -1,6 +1,7 @@
 .list{
     display: flex;
     flex-direction: column;
+    padding: 20px 24px;
 }
 .list_title{
     font-size: 2.5em;
@@ -9,8 +10,14 @@
     margin-bottom: 16px;
 }
 .list_flex{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 24px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    column-gap: 20px;
+}
+@media (max-width: 800px) {
+    .list_flex{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 }

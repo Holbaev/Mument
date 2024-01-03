@@ -1,11 +1,25 @@
 .header{
+    position: sticky;
+    top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #121212;
+    background: #1a1a1a;
     padding: 16px 24px;
-    border-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top-left-radius:6px;
+    transition: background-color 0.4s ease;
+    z-index: 10;
+}
+
+.scrolled {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #121212; // Add a background color for the fixed header
 }
 .header_btns{
     display: flex;
@@ -41,3 +55,74 @@ transition: transform 200ms ease; /* Changed from color to transform for scaling
   .register_btn:hover {
     transform: scale(1.04); /* Adjust the scale factor as needed */
   }
+
+  .header_icons{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .header_icon{
+    border: 1px solid white;
+    background-color:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+.burger_icon{
+  display: none;
+}
+.header_icon:hover{
+    background-color: hsla(0,0%,100%,.3);
+}
+  .icon{
+    color: #fff;
+    width: 16px;
+    height: 16px;
+  }
+  .content{
+    padding: 5px;
+    width: 180px;
+    border-radius: 4px;
+    background: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  .content_text{
+    background: transparent;
+    border:none;
+    padding: 12px;
+    font-weight: 400;
+    color: #b3b3b3;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    width: 100%;
+    text-align: left;
+    z-index: 10;
+    }
+  .content_text:hover{
+    background-color: hsla(0,0%,100%,.3);
+    color: white;
+    z-index: 100;
+  }
+  
+  @media (max-width: 800px) {
+    .burger_icon{
+      border: 1px solid white;
+      background-color:#000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: background-color 0.4s ease;
+    }
+}

@@ -1,0 +1,105 @@
+.layout{
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    column-gap: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 10px;
+}
+.section_1{
+    min-width: 264px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-height: 740px;
+}
+.section_2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 740px;
+    overflow-y: auto;
+}
+.section_2_content{
+    padding: 10px 0px;
+    width: 100%;
+    height: auto;
+    background: #1a1a1a;
+}
+.section_2::-webkit-scrollbar {
+    width: 0.5em;
+}
+.section_2::-webkit-scrollbar-thumb {
+    background-color: transparent; /* изменено на transparent */
+}
+.section_2::-webkit-scrollbar-track {
+    background-color: transparent; /* изменено на transparent */
+}
+.close_menu{
+    display: none;
+}
+.icon{
+    color: white;
+    width: 16px;
+    height: 16px;
+}
+@media (max-width: 1000px) {
+    .layout{
+        font-size: 8px;
+    }
+}
+@media (max-width: 800px) {
+    .layout{
+        font-size: 8px;
+    }
+    .section_1{
+        max-height: none;
+    }
+    .section_2{
+        max-height: none;
+    }
+    .section_1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        z-index: 100;
+        background: #000; 
+        transform: translateX(-100%);
+        transition: transform 0.4ms;
+    }
+    .open{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        z-index: 100;
+        background: #000; 
+        transform: translateX(0%); 
+    }
+    
+
+    .close_menu{
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        cursor: pointer;
+    }
+}
+

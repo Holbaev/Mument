@@ -9,10 +9,10 @@ const Gender = ({onChange}) => {
   // functions
 
   const handleCheckboxChange = (gender) => {
-    if (gender === "male") {
+    if (gender === "M") {
       setIsCheckedMale(!isCheckedMale);
       setIsCheckedFemale(false);
-    } else if (gender === "female") {
+    } else if (gender === "F") {
       setIsCheckedFemale(!isCheckedFemale);
       setIsCheckedMale(false);
     }
@@ -27,7 +27,7 @@ const Gender = ({onChange}) => {
         <input
           type="checkbox"
           checked={isCheckedMale}
-          onChange={() => handleCheckboxChange("male")}
+          onChange={() => handleCheckboxChange("M")}
         />
         Man
       </label>
@@ -35,7 +35,7 @@ const Gender = ({onChange}) => {
         <input
           type="checkbox"
           checked={isCheckedFemale}
-          onChange={() => handleCheckboxChange("female")}
+          onChange={() => handleCheckboxChange("F")}
         />
         Woman
       </label>

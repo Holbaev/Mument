@@ -1,30 +1,62 @@
-.card{
-    color: white;
-    width: 100%;
-    background: #2a2a2a;
-    padding: 16px;
-    border-radius: 6px;
+.card {
+  color: white;
+  max-width: 180px;
+  width: 100%;
+  background: #252424;
+  padding: 16px;
+  border-radius: 6px;
+  transition: opacity background 0.4s;
 }
-.card_img{
-    max-height: 145px;
-    max-width: 145px;
-    height: auto;
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 16px;
+.card:hover {
+  background: #2a2a2a;
+  cursor: pointer;
+}
+.card_img {
+  max-height: 145px;
+  max-width: 145px;
+  height: auto;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+.card_title {
+  font-size: 2em;
+  font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.card_desk {
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #a7a7a7;
+}
+.card:hover .card_btn {
+  opacity: 1;
+}
+.card_image {
+  position: relative;
+  z-index: 1;
+}
 
+.card_btn {
+  transition: opacity 0.4s ease;
+  position: absolute;
+  bottom: 22px;
+  right: 8px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #3d91f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
 }
-.card_title{
-    font-size: 2em;
-    font-weight: 700;
-    -webkit-tap-highlight-color: transparent;
-    color: #fff;
-    margin-bottom: 4px;
-}
-.card_desk{
-    -webkit-tap-highlight-color: transparent;
-    font-size: 1.6em;
-    font-weight: 400;
-    color: #a7a7a7 ;
-
+.icon {
+  width: 16px;
+  height: 16px;
 }

@@ -1,11 +1,12 @@
 .library{
+    height: 100%;
     width: 100%;
     background: #121212;
     color: white;
     padding: 24px 20px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    justify-content: space-between;
     border-radius: 6px;
 }
 .library_head{
@@ -13,7 +14,11 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.library_box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
 .library_flex{
     display: flex;
     align-items: center;
@@ -92,4 +97,38 @@
 }
 .library_language:hover{
     transform: scale(1.02);
+}
+.library_foot{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.library_info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.info_text{
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #a7a7a7;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+.info_text:hover{
+    color: white;
+}
+@media (max-width: 800px) {
+    .library{
+        max-width: 264px;
+        width: 100%;
+        background: transparent;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        row-gap: 10px;
+    }
+    .library_info{
+        display: none;
+    }
 }

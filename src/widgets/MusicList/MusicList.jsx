@@ -10,6 +10,16 @@ function MusicList() {
         <MusicCard/>
         <MusicCard/>
         <MusicCard/>
+        <MusicCard/>
+        <MusicCard/>
+        <MusicCard/>
+        <MusicCard/>
+        <MusicCard/>
+        <MusicCard/>
+        <MusicCard/>
+        <MusicCard/>
+        <MusicCard/>
+        <MusicCard/>
         </div>
     </div>
   )
